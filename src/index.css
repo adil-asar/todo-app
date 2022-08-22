@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&family=Roboto:wght@100&display=swap');
+
+.todo{
+  width: 40%;
+  padding:2rem 1rem;
+  background-color:#6b8e23;
+  margin: 5rem auto;
+  border-radius: 1rem;
+  min-height: 50vh;
+  text-align: center;
+}
+.heading{
+letter-spacing: .1rem;
+margin: 1rem 0;
+color: white;
+
+}
+
+.form{
+  position: relative;
+}
+.inp_css{
+  width: 90%;
+  height: 2.5rem;
+  padding: 1rem;
+  color: white;
+  margin: 1rem 0;
+  border: 1px solid white;
+  background-color: transparent;
+   outline: none;
+}
+.icon{
+font-size: 1.8rem;
+color: #ffff !important;
+position: absolute;
+right: 37px;
+cursor: pointer;
+top: 22px;
+}
+
+.list{
+  width: 90%;
+  height: 2.5rem;
+  margin: 1rem auto;
+  position: relative;
+  /* border: 1px solid #ffff; */
+  padding: .6rem 1rem;
+  background-color: #9acd32;
+  display: flex;
+  justify-content: space-between;
+}
+.list_item{
+  font-size: 1.1rem;
+  color: #ffff;
+  text-align: left;
+  width: 90%;
+ 
+  text-transform: capitalize;
+}
+.delete_icon{
+  font-size: 2rem;
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  color: #ffff;
+  cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 1000px){
+  .todo{
+    width: 70%;
+    
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .todo{
+    width: 85%;
+  }
+  .icon{
+    font-size: 1.6rem;
+
+    position: absolute;
+    right: 35px;
+    top: 23px;
+    }
+    .heading{
+      font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 330px){
+  .todo{
+    width: 95%;
+  }
+  .icon{
+    font-size: 1.5rem;
+
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    }
+    .delete_icon{
+      font-size: 1.7rem;
+      position: absolute;
+      right: 8px;
+      top: 7px;
+    }
+    .heading{
+      font-size: 1.5rem;
+    }
+}
+
